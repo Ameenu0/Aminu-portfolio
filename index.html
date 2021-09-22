@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio - Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  section{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center; /*vertically*/
+    align-items: center; /*horizontal*/
+    flex-direction: column;
+  }
+
+  .navbar {
+    position: fixed;
+  }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid p-3 my-3 bg-dark text-white">
+  <div class="btn-group">
+    <button type="button" class="btn btn-light">Navbar</button>
+    <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+      <span class="caret"></span>
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="index.html">Home</a>
+      <a class="dropdown-item" href="about.html">About</a>
+      <a class="dropdown-item" href="contact.html">Contact</a>
+    </div>
+  </div>  
+</div>
+<section class="container">
+  <img src="gabriel.jpg" style="width: 200px; height: 200px; border-radius: 50%;" class="mx-auto d-block" alt="...">
+  <p>Hello, I'm Aminu Ayuba</p>
+</section>
+<ul class="pagination">
+  <li class="page-item"><a class="page-link" href="about.html">Next</a></li>
+</ul>
+</body>
+</html>
